@@ -1,0 +1,28 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height":400,
+    "title":"Weekly income of Migrants",
+    "data": {
+      "values": [
+        {"category": "Negative or nil income", "value": 10854 },
+        {"category": "$1–$299", "value": 81912},
+        {"category": "$300–$649", "value": 206968},
+        {"category": "$650–$999", "value": 306185},
+        {"category": "$1,000–$1,499", "value": 296826},
+        {"category": "$1,500–$1,999", "value": 177138},
+        {"category": "$2,000–$2,999", "value": 119271},
+        {"category": "$3,000 or more", "value": 69456},
+        {"category": "Not stated", "value": 14211}
+      ]
+    },
+    "mark": "arc",
+    "encoding": {
+      "theta": {"field": "value", "type": "quantitative"},
+      "color": {"field": "category", "type": "nominal","title":"Weekly Income"},
+      "tooltip":[
+        {"field":"value", "type": "quantitative","title":"Total Number of Migrants:"},
+        {"field":"category","type":"nominal","title":"Weekly Income Range:"}
+      ]
+    }
+  }

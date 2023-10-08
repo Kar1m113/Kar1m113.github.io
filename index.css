@@ -1,0 +1,45 @@
+.column1 {
+    float: left;
+    width: 50%;
+  }
+.footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px;
+    
+}
+.column2{
+float: right;
+width: 19%;
+}
+.column3 {
+    float: left;
+    width: 33.3%;
+  }
+  .column4 {
+    float: right;
+    width: 33.3%;
+  }
+  .column5 {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.p{
+    color: #ffffff;
+}
+.column6{
+    float: left;
+    width: 25%;
+}
+.column7{
+    float: left;
+    width: 66.6%;
+}
